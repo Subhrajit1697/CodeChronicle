@@ -26,7 +26,7 @@ export default function Home() {
   const [cartOpen, setCartOpen] = useState(false);
   const [quickViewProduct, setQuickViewProduct] = useState<Product | null>(null);
   const [cartItems, setCartItems] = useState<CartItem[]>([]);
-
+  console.log('quickViewProduct state', quickViewProduct)
   const newArrivals: Product[] = [
     {
       id: '1',
@@ -149,10 +149,19 @@ export default function Home() {
   ];
 
   const categories = [
-    { name: 'Dresses', image: dressImage, itemCount: '120+ Styles' },
-    { name: 'Tops', image: blouseImage, itemCount: '85+ Styles' },
-    { name: 'Bottoms', image: skirtImage, itemCount: '95+ Styles' },
-    { name: 'Accessories', image: handbagImage, itemCount: '60+ Styles' }
+    { name: 'Dresses', image: dressImage, itemCount: '120+ Styles', id: '1' },
+    { name: 'Bottoms', image: skirtImage, itemCount: '95+ Styles', id: '2' },
+    { name: 'Accessories', image: handbagImage, itemCount: '60+ Styles', id: '3' },
+    { name: 'Dresses', image: dressImage, itemCount: '120+ Styles', id: '4' },
+    { name: 'Tops', image: blouseImage, itemCount: '85+ Styles', id: '5' },
+    { name: 'Bottoms', image: skirtImage, itemCount: '95+ Styles', id: '6' },
+    { name: 'Accessories', image: handbagImage, itemCount: '60+ Styles', id: '7' },
+    { name: 'Dresses', image: dressImage, itemCount: '120+ Styles', id: '8' },
+    { name: 'Bottoms', image: skirtImage, itemCount: '95+ Styles', id: '9' },
+    { name: 'Accessories', image: handbagImage, itemCount: '60+ Styles', id: '10' },
+    { name: 'Dresses', image: dressImage, itemCount: '120+ Styles', id: '11' },
+    { name: 'Tops', image: blouseImage, itemCount: '85+ Styles', id: '12' },
+    { name: 'Accessories', image: handbagImage, itemCount: '60+ Styles', id: '13' },
   ];
 
   const allProducts = [...newArrivals, ...bestSellers];
@@ -180,6 +189,147 @@ export default function Home() {
       sizes: ['XS', 'S', 'M', 'L', 'XL'],
       materials: '95% Polyester, 5% Elastane'
     },
+    '3': {
+      id: '3',
+      name: 'Cream Cashmere Sweater',
+      price: 149,
+      images: [sweaterImage, sweaterImage, sweaterImage, sweaterImage],
+      category: 'Tops',
+      description: 'Luxuriously soft cashmere sweater in a versatile cream shade. Features a classic crewneck design and ribbed trim for a refined finish.',
+      sizes: ['XS', 'S', 'M', 'L', 'XL'],
+      materials: '100% Pure Cashmere'
+    },
+    '4': {
+      id: '4',
+      name: 'Navy Wide-Leg Trousers',
+      price: 129,
+      images: [trousersImage, trousersImage, trousersImage, trousersImage],
+      category: 'Bottoms',
+      description: 'Sophisticated wide-leg trousers in rich navy. Featuring a high-rise waist and flowing silhouette for effortless elegance.',
+      sizes: ['XS', 'S', 'M', 'L', 'XL'],
+      materials: '70% Wool, 30% Polyester'
+    },
+    '5': {
+      id: '5',
+      name: 'Burgundy Leather Handbag',
+      price: 299,
+      images: [handbagImage, handbagImage, handbagImage, handbagImage],
+      category: 'Accessories',
+      description: 'Premium leather handbag in deep burgundy. Features multiple compartments, adjustable strap, and gold-tone hardware.',
+      sizes: ['One Size'],
+      materials: '100% Genuine Leather'
+    },
+    '6': {
+      id: '6',
+      name: 'White Silk Blouse',
+      price: 119,
+      images: [blouseImage, blouseImage, blouseImage, blouseImage],
+      category: 'Tops',
+      description: 'Classic white silk blouse with delicate button detailing. Perfect for both professional and casual settings.',
+      sizes: ['XS', 'S', 'M', 'L', 'XL'],
+      materials: '100% Silk'
+    },
+    '7': {
+      id: '7',
+      name: 'Rose Pink Midi Skirt',
+      price: 139,
+      images: [skirtImage, skirtImage, skirtImage, skirtImage],
+      category: 'Bottoms',
+      description: 'Romantic midi skirt in soft rose pink. Features a flowing A-line silhouette and hidden side zipper.',
+      sizes: ['XS', 'S', 'M', 'L', 'XL'],
+      materials: '65% Polyester, 35% Cotton'
+    },
+    '8': {
+      id: '8',
+      name: 'Classic Navy Blazer',
+      price: 219,
+      images: [trousersImage, trousersImage, trousersImage, trousersImage],
+      category: 'Tops',
+      description: 'Timeless navy blazer with structured shoulders and notched lapels. A wardrobe essential for any occasion.',
+      sizes: ['XS', 'S', 'M', 'L', 'XL'],
+      materials: '75% Wool, 25% Polyester'
+    },
+    '9': {
+      id: '9',
+      name: 'Signature White Silk Blouse',
+      price: 119,
+      images: [blouseImage, blouseImage, blouseImage, blouseImage],
+      category: 'Tops',
+      description: 'Our signature silk blouse in pristine white. Features elegant draping and mother-of-pearl buttons.',
+      sizes: ['XS', 'S', 'M', 'L', 'XL'],
+      materials: '100% Mulberry Silk'
+    },
+    '10': {
+      id: '10',
+      name: 'Rose Pink Midi Skirt',
+      price: 139,
+      originalPrice: 169,
+      images: [skirtImage, skirtImage, skirtImage, skirtImage],
+      category: 'Bottoms',
+      description: 'Feminine midi skirt in delicate rose pink. Features a flattering high waist and graceful pleating.',
+      sizes: ['XS', 'S', 'M', 'L', 'XL'],
+      materials: '70% Viscose, 30% Linen'
+    },
+    '11': {
+      id: '11',
+      name: 'Premium Cashmere Sweater',
+      price: 149,
+      images: [sweaterImage, sweaterImage, sweaterImage, sweaterImage],
+      category: 'Tops',
+      description: 'Premium grade cashmere sweater for ultimate comfort. Features ribbed cuffs and hem with a relaxed fit.',
+      sizes: ['XS', 'S', 'M', 'L', 'XL'],
+      materials: '100% Grade-A Cashmere'
+    },
+    '12': {
+      id: '12',
+      name: 'Luxury Leather Handbag',
+      price: 299,
+      images: [handbagImage, handbagImage, handbagImage, handbagImage],
+      category: 'Accessories',
+      description: 'Luxury leather handbag crafted from Italian leather. Features structured design with elegant hardware details.',
+      sizes: ['One Size'],
+      materials: '100% Italian Leather'
+    },
+    '13': {
+      id: '13',
+      name: 'Navy Wide-Leg Trousers',
+      price: 129,
+      images: [trousersImage, trousersImage, trousersImage, trousersImage],
+      category: 'Bottoms',
+      description: 'Elegant wide-leg trousers in classic navy. Features tailored fit through the hip with relaxed leg opening.',
+      sizes: ['XS', 'S', 'M', 'L', 'XL'],
+      materials: '68% Polyester, 30% Viscose, 2% Elastane'
+    },
+    '14': {
+      id: '14',
+      name: 'Black Cocktail Dress',
+      price: 189,
+      images: [blackDressImage, blackDressImage, blackDressImage, blackDressImage],
+      category: 'Dresses',
+      description: 'Sophisticated black cocktail dress with figure-flattering silhouette. Perfect for evening events and special occasions.',
+      sizes: ['XS', 'S', 'M', 'L', 'XL'],
+      materials: '92% Polyester, 8% Elastane'
+    },
+    '15': {
+      id: '15',
+      name: 'Mauve Silk Dress',
+      price: 289,
+      images: [dressImage, dressImage, dressImage, dressImage],
+      category: 'Dresses',
+      description: 'Luxurious mauve silk dress with elegant draping and flowing movement. A statement piece for any wardrobe.',
+      sizes: ['XS', 'S', 'M', 'L', 'XL'],
+      materials: '100% Silk Charmeuse'
+    },
+    '16': {
+      id: '16',
+      name: 'Elegant Blazer',
+      price: 219,
+      images: [trousersImage, trousersImage, trousersImage, trousersImage],
+      category: 'Tops',
+      description: 'Impeccably tailored blazer with modern silhouette. Features single-button closure and functional pockets.',
+      sizes: ['XS', 'S', 'M', 'L', 'XL'],
+      materials: '80% Wool, 20% Polyester'
+    },
   };
 
   const handleQuickView = (product: Product) => {
@@ -191,7 +341,7 @@ export default function Home() {
     if (!product) return;
 
     const existingItem = cartItems.find(item => item.id === productId && item.size === size);
-    
+
     if (existingItem) {
       setCartItems(cartItems.map(item =>
         item.id === productId && item.size === size
@@ -209,7 +359,7 @@ export default function Home() {
       };
       setCartItems([...cartItems, newItem]);
     }
-    
+
     setQuickViewProduct(null);
     setCartOpen(true);
   };
@@ -224,28 +374,28 @@ export default function Home() {
     setCartItems(cartItems.filter(item => item.id !== id));
   };
 
-  const quickViewProductDetail = quickViewProduct && productDetailsMap[quickViewProduct.id] 
+  const quickViewProductDetail = quickViewProduct && productDetailsMap[quickViewProduct.id]
     ? productDetailsMap[quickViewProduct.id]
     : null;
 
   return (
     <div className="min-h-screen flex flex-col">
-      <Header 
-        onCartClick={() => setCartOpen(true)}
-        cartItemCount={cartItems.reduce((sum, item) => sum + item.quantity, 0)}
-      />
-      
+
       <main className="flex-1">
         <Hero />
-        <CategoryShowcase categories={categories} />
-        <ProductGrid products={newArrivals} onQuickView={handleQuickView} />
+        <div id="categories">
+          <CategoryShowcase categories={categories} />
+        </div>
+        <div id="new-arrivals">
+          <ProductGrid products={newArrivals} onQuickView={handleQuickView} />
+        </div>
         <FeaturedCollection
           image={dressImage}
-          title="Spring Essentials"
+          title="Winter Essentials"
           subtitle="New Collection"
-          description="Discover our carefully curated selection of spring essentials. From flowing dresses to elegant accessories, each piece is designed to elevate your wardrobe with timeless sophistication."
+          description="Discover our carefully curated selection of Winter essentials. From flowing dresses to elegant accessories, each piece is designed to elevate your wardrobe with timeless sophistication."
         />
-        <section className="py-12 sm:py-16 lg:py-24">
+        <section id="best-sellers" className="py-12 sm:py-16 lg:py-24">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
               <h2 className="font-serif text-3xl sm:text-4xl font-bold mb-4">Best Sellers</h2>
@@ -257,7 +407,7 @@ export default function Home() {
               {bestSellers.map((product) => (
                 <div key={product.id}>
                   {/* Inline ProductCard to avoid import issues */}
-                  <div 
+                  <div
                     className="group overflow-hidden border border-card-border hover-elevate transition-all duration-300 rounded-md bg-card"
                     onClick={() => handleQuickView(product)}
                   >
@@ -295,7 +445,6 @@ export default function Home() {
         <Newsletter />
       </main>
 
-      <Footer />
 
       <ShoppingCart
         isOpen={cartOpen}

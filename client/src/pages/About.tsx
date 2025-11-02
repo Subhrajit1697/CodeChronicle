@@ -42,10 +42,10 @@ export default function About() {
 
   return (
     <div className="min-h-screen flex flex-col">
-      <Header 
+      {/* <Header 
         onCartClick={() => setCartOpen(true)}
         cartItemCount={cartItems.reduce((sum, item) => sum + item.quantity, 0)}
-      />
+      /> */}
       
       <main className="flex-1">
         <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
@@ -187,7 +187,6 @@ export default function About() {
         </section>
       </main>
 
-      <Footer />
 
       <ShoppingCart
         isOpen={cartOpen}

@@ -5,9 +5,9 @@ export default function FeaturedCollectionExample() {
   return (
     <FeaturedCollection
       image={featuredImage}
-      title="Spring Essentials"
+      title="Winter Essentials"
       subtitle="New Collection"
-      description="Discover our carefully curated selection of spring essentials. From flowing dresses to elegant accessories, each piece is designed to elevate your wardrobe with timeless sophistication."
+      description="Discover our carefully curated selection of Winter essentials. From flowing dresses to elegant accessories, each piece is designed to elevate your wardrobe with timeless sophistication."
     />
   );
 }

@@ -1,7 +1,8 @@
 import { Button } from "@/components/ui/button";
 import heroImage from "@assets/generated_images/Hero_lifestyle_fashion_shot_141de14a.png";
-
+import { useLocation } from 'wouter';
 export default function Hero() {
+    const [_, navigate] = useLocation();
   return (
     <section className="relative h-[90vh] flex items-center justify-center overflow-hidden">
       <div 
@@ -24,6 +25,7 @@ export default function Hero() {
             variant="outline" 
             className="bg-white/10 backdrop-blur-sm border-white/20 text-white hover:bg-white/20 min-w-[160px]"
             data-testid="button-shop-now"
+            onClick={() => navigate('/products')}
           >
             SHOP NOW
           </Button>
@@ -32,6 +34,7 @@ export default function Hero() {
             variant="outline"
             className="bg-transparent backdrop-blur-sm border-white/40 text-white hover:bg-white/10 min-w-[160px]"
             data-testid="button-explore"
+            onClick={() => navigate('/products')}
           >
             EXPLORE COLLECTION
           </Button>

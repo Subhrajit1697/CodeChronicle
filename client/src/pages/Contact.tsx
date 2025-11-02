@@ -59,10 +59,10 @@ export default function Contact() {
 
   return (
     <div className="min-h-screen flex flex-col">
-      <Header 
+      {/* <Header 
         onCartClick={() => setCartOpen(true)}
         cartItemCount={cartItems.reduce((sum, item) => sum + item.quantity, 0)}
-      />
+      /> */}
       
       <main className="flex-1">
         <section className="py-16 sm:py-20 lg:py-24 bg-card">
@@ -247,7 +247,6 @@ export default function Contact() {
         </section>
       </main>
 
-      <Footer />
 
       <ShoppingCart
         isOpen={cartOpen}

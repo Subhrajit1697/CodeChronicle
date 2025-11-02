@@ -4,7 +4,7 @@ import { useLocation } from 'wouter';
 export default function Hero() {
     const [_, navigate] = useLocation();
   return (
-    <section className="relative h-[90vh] flex items-center justify-center overflow-hidden">
+    <section className="relative h-[95vh] flex items-center justify-center overflow-hidden">
       <div 
         className="absolute inset-0 bg-cover bg-center"
         style={{ backgroundImage: `url(${heroImage})` }}

@@ -17,6 +17,9 @@ import { Button } from "@/components/ui/button";
 import { SlidersHorizontal } from "lucide-react";
 
 import dressImage from "@assets/generated_images/Woman_in_mauve_dress_75837bf2.png";
+import bridaldress1 from "@assets/generated_images/indian01.jfif";
+import bridaldress2 from "@assets/generated_images/indian02.jfif";
+import bridaldress3 from "@assets/generated_images/indian03.jfif";
 import blackDressImage from "@assets/generated_images/black_cocktail_dress.jfif";
 import sweaterImage from "@assets/generated_images/Women's_Sweater.jfif";
 import trousersImage from "@assets/generated_images/LTS Tall Womens Black Wide Leg High Waisted Trousers _ Long Tall Sally.jfif";
@@ -118,6 +121,30 @@ export default function ProductListing() {
       price: 299,
       image: handbagImage,
       category: 'Accessories'
+    },
+     {
+      id: '13',
+      name: 'Bridal Outfits',
+      price: 2289,
+      originalPrice: 3059,
+      image: bridaldress1,
+      category: 'Dresses'
+    },
+        {
+      id: '14',
+      name: 'Bridal Outfits',
+      price: 2289,
+      originalPrice: 3059,
+      image: bridaldress2,
+      category: 'Dresses'
+    },
+           {
+      id: '15',
+      name: 'Bridal Outfits',
+      price: 2289,
+      originalPrice: 3059,
+      image: bridaldress3,
+      category: 'Dresses'
     },
   ];
 

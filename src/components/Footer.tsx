@@ -98,7 +98,7 @@ export default function Footer() {
         <div className="border-t border-border pt-8">
           <div className="flex flex-col lg:flex-row justify-between items-center gap-6">
             <div className="flex flex-col sm:flex-row items-center gap-4 text-sm text-muted-foreground">
-              <span>&copy; 2024 Elegance. All rights reserved.</span>
+              <span>&copy; 2025 Elegance. All rights reserved.</span>
               <div className="flex gap-4">
                 <Link href="/">
                   <span className="hover:text-foreground transition-colors" data-testid="link-privacy">Privacy Policy</span>

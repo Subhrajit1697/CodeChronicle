@@ -15,12 +15,13 @@ import {
 } from "@/components/ui/dialog";
 
 import dressImage from "@assets/generated_images/Woman_in_mauve_dress_75837bf2.png";
-import blackDressImage from "@assets/generated_images/black_cocktail_dress.jfif";
-import sweaterImage from "@assets/generated_images/Women's_Sweater.jfif";
-import trousersImage from "@assets/generated_images/LTS Tall Womens Black Wide Leg High Waisted Trousers _ Long Tall Sally.jfif";
-import handbagImage from "@assets/generated_images/handbag03.jfif";
-import blouseImage from "@assets/generated_images/20 Best Formal Shirts for Women With Latest Designs.jfif";
-import skirtImage from "@assets/generated_images/Ivanka Trump cuts a classic figure as she heads out to work.jfif";
+import winter_collection from "@assets/generated_images/winter_collection.webp";
+import blackDressImage from "@assets/generated_images/Black_cocktail_dress_85fd198d.png";
+import sweaterImage from "@assets/generated_images/Cream_cashmere_sweater_f77fd6f1.png";
+import trousersImage from "@assets/generated_images/Navy_blue_trousers_028ba23d.png";
+import handbagImage from "@assets/generated_images/Burgundy_leather_handbag_b5972d24.png";
+import blouseImage from "@assets/generated_images/White_silk_blouse_199f23e2.png";
+import skirtImage from "@assets/generated_images/Rose_pink_midi_skirt_ed8a7f4d.png";
 
 export default function Home() {
   const [cartOpen, setCartOpen] = useState(false);
@@ -31,58 +32,58 @@ export default function Home() {
     {
       id: '1',
       name: 'Flowing Mauve Silk Midi Dress',
-      price: 289,
-      originalPrice: 359,
+      price: 4999,
+      originalPrice: 6999,
       image: dressImage,
       category: 'Dresses'
     },
     {
       id: '2',
       name: 'Elegant Black Cocktail Dress',
-      price: 189,
-      originalPrice: 249,
+      price: 3499,
+      originalPrice: 4999,
       image: blackDressImage,
       category: 'Dresses'
     },
     {
       id: '3',
       name: 'Cream Cashmere Sweater',
-      price: 149,
+      price: 2799,
       image: sweaterImage,
       category: 'Tops'
     },
     {
       id: '4',
       name: 'Navy Wide-Leg Trousers',
-      price: 129,
+      price: 1999,
       image: trousersImage,
       category: 'Bottoms'
     },
     {
       id: '5',
       name: 'Burgundy Leather Handbag',
-      price: 299,
+      price: 5499,
       image: handbagImage,
       category: 'Accessories'
     },
     {
       id: '6',
       name: 'White Silk Blouse',
-      price: 119,
+      price: 1799,
       image: blouseImage,
       category: 'Tops'
     },
     {
       id: '7',
       name: 'Rose Pink Midi Skirt',
-      price: 139,
+      price: 2299,
       image: skirtImage,
       category: 'Bottoms'
     },
     {
       id: '8',
       name: 'Classic Navy Blazer',
-      price: 219,
+      price: 3999,
       image: trousersImage,
       category: 'Tops'
     }
@@ -92,57 +93,57 @@ export default function Home() {
     {
       id: '9',
       name: 'Signature White Silk Blouse',
-      price: 119,
+      price: 1899,
       image: blouseImage,
       category: 'Tops'
     },
     {
       id: '10',
       name: 'Rose Pink Midi Skirt',
-      price: 139,
-      originalPrice: 169,
+      price: 2199,
+      originalPrice: 2999,
       image: skirtImage,
       category: 'Bottoms'
     },
     {
       id: '11',
       name: 'Premium Cashmere Sweater',
-      price: 149,
+      price: 2899,
       image: sweaterImage,
       category: 'Tops'
     },
     {
       id: '12',
       name: 'Luxury Leather Handbag',
-      price: 299,
+      price: 5999,
       image: handbagImage,
       category: 'Accessories'
     },
     {
       id: '13',
       name: 'Navy Wide-Leg Trousers',
-      price: 129,
+      price: 1899,
       image: trousersImage,
       category: 'Bottoms'
     },
     {
       id: '14',
       name: 'Black Cocktail Dress',
-      price: 189,
+      price: 3299,
       image: blackDressImage,
       category: 'Dresses'
     },
     {
       id: '15',
       name: 'Mauve Silk Dress',
-      price: 289,
+      price: 4799,
       image: dressImage,
       category: 'Dresses'
     },
     {
       id: '16',
       name: 'Elegant Blazer',
-      price: 219,
+      price: 3799,
       image: trousersImage,
       category: 'Tops'
     }
@@ -170,8 +171,8 @@ export default function Home() {
     '1': {
       id: '1',
       name: 'Flowing Mauve Silk Midi Dress',
-      price: 289,
-      originalPrice: 359,
+      price: 4999,
+      originalPrice: 6999,
       images: [dressImage, dressImage, dressImage, dressImage],
       category: 'Dresses',
       description: 'A stunning silk midi dress featuring a flowing silhouette and elegant draping. Perfect for special occasions or elevated everyday wear.',
@@ -181,8 +182,8 @@ export default function Home() {
     '2': {
       id: '2',
       name: 'Elegant Black Cocktail Dress',
-      price: 189,
-      originalPrice: 249,
+      price: 3499,
+      originalPrice: 4999,
       images: [blackDressImage, blackDressImage, blackDressImage, blackDressImage],
       category: 'Dresses',
       description: 'A timeless black cocktail dress with a sophisticated cut. Features a flattering silhouette and premium fabric.',
@@ -192,7 +193,7 @@ export default function Home() {
     '3': {
       id: '3',
       name: 'Cream Cashmere Sweater',
-      price: 149,
+      price: 2799,
       images: [sweaterImage, sweaterImage, sweaterImage, sweaterImage],
       category: 'Tops',
       description: 'Luxuriously soft cashmere sweater in a versatile cream shade. Features a classic crewneck design and ribbed trim for a refined finish.',
@@ -202,7 +203,7 @@ export default function Home() {
     '4': {
       id: '4',
       name: 'Navy Wide-Leg Trousers',
-      price: 129,
+      price: 1999,
       images: [trousersImage, trousersImage, trousersImage, trousersImage],
       category: 'Bottoms',
       description: 'Sophisticated wide-leg trousers in rich navy. Featuring a high-rise waist and flowing silhouette for effortless elegance.',
@@ -212,7 +213,7 @@ export default function Home() {
     '5': {
       id: '5',
       name: 'Burgundy Leather Handbag',
-      price: 299,
+      price: 5499,
       images: [handbagImage, handbagImage, handbagImage, handbagImage],
       category: 'Accessories',
       description: 'Premium leather handbag in deep burgundy. Features multiple compartments, adjustable strap, and gold-tone hardware.',
@@ -222,7 +223,7 @@ export default function Home() {
     '6': {
       id: '6',
       name: 'White Silk Blouse',
-      price: 119,
+      price: 1799,
       images: [blouseImage, blouseImage, blouseImage, blouseImage],
       category: 'Tops',
       description: 'Classic white silk blouse with delicate button detailing. Perfect for both professional and casual settings.',
@@ -232,7 +233,7 @@ export default function Home() {
     '7': {
       id: '7',
       name: 'Rose Pink Midi Skirt',
-      price: 139,
+      price: 2299,
       images: [skirtImage, skirtImage, skirtImage, skirtImage],
       category: 'Bottoms',
       description: 'Romantic midi skirt in soft rose pink. Features a flowing A-line silhouette and hidden side zipper.',
@@ -242,7 +243,7 @@ export default function Home() {
     '8': {
       id: '8',
       name: 'Classic Navy Blazer',
-      price: 219,
+      price: 3999,
       images: [trousersImage, trousersImage, trousersImage, trousersImage],
       category: 'Tops',
       description: 'Timeless navy blazer with structured shoulders and notched lapels. A wardrobe essential for any occasion.',
@@ -252,7 +253,7 @@ export default function Home() {
     '9': {
       id: '9',
       name: 'Signature White Silk Blouse',
-      price: 119,
+      price: 1899,
       images: [blouseImage, blouseImage, blouseImage, blouseImage],
       category: 'Tops',
       description: 'Our signature silk blouse in pristine white. Features elegant draping and mother-of-pearl buttons.',
@@ -262,8 +263,8 @@ export default function Home() {
     '10': {
       id: '10',
       name: 'Rose Pink Midi Skirt',
-      price: 139,
-      originalPrice: 169,
+      price: 2199,
+      originalPrice: 2999,
       images: [skirtImage, skirtImage, skirtImage, skirtImage],
       category: 'Bottoms',
       description: 'Feminine midi skirt in delicate rose pink. Features a flattering high waist and graceful pleating.',
@@ -273,7 +274,7 @@ export default function Home() {
     '11': {
       id: '11',
       name: 'Premium Cashmere Sweater',
-      price: 149,
+      price: 2899,
       images: [sweaterImage, sweaterImage, sweaterImage, sweaterImage],
       category: 'Tops',
       description: 'Premium grade cashmere sweater for ultimate comfort. Features ribbed cuffs and hem with a relaxed fit.',
@@ -283,7 +284,7 @@ export default function Home() {
     '12': {
       id: '12',
       name: 'Luxury Leather Handbag',
-      price: 299,
+      price: 5999,
       images: [handbagImage, handbagImage, handbagImage, handbagImage],
       category: 'Accessories',
       description: 'Luxury leather handbag crafted from Italian leather. Features structured design with elegant hardware details.',
@@ -293,7 +294,7 @@ export default function Home() {
     '13': {
       id: '13',
       name: 'Navy Wide-Leg Trousers',
-      price: 129,
+      price: 1899,
       images: [trousersImage, trousersImage, trousersImage, trousersImage],
       category: 'Bottoms',
       description: 'Elegant wide-leg trousers in classic navy. Features tailored fit through the hip with relaxed leg opening.',
@@ -303,7 +304,7 @@ export default function Home() {
     '14': {
       id: '14',
       name: 'Black Cocktail Dress',
-      price: 189,
+      price: 3299,
       images: [blackDressImage, blackDressImage, blackDressImage, blackDressImage],
       category: 'Dresses',
       description: 'Sophisticated black cocktail dress with figure-flattering silhouette. Perfect for evening events and special occasions.',
@@ -313,7 +314,7 @@ export default function Home() {
     '15': {
       id: '15',
       name: 'Mauve Silk Dress',
-      price: 289,
+      price: 4799,
       images: [dressImage, dressImage, dressImage, dressImage],
       category: 'Dresses',
       description: 'Luxurious mauve silk dress with elegant draping and flowing movement. A statement piece for any wardrobe.',
@@ -323,7 +324,7 @@ export default function Home() {
     '16': {
       id: '16',
       name: 'Elegant Blazer',
-      price: 219,
+      price: 3799,
       images: [trousersImage, trousersImage, trousersImage, trousersImage],
       category: 'Tops',
       description: 'Impeccably tailored blazer with modern silhouette. Features single-button closure and functional pockets.',
@@ -379,7 +380,7 @@ export default function Home() {
     : null;
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col bg-amber-50">
 
       <main className="flex-1">
         <Hero />
@@ -390,7 +391,7 @@ export default function Home() {
           <ProductGrid products={newArrivals} onQuickView={handleQuickView} />
         </div>
         <FeaturedCollection
-          image={dressImage}
+          image={winter_collection}
           title="Winter Essentials"
           subtitle="New Collection"
           description="Discover our carefully curated selection of Winter essentials. From flowing dresses to elegant accessories, each piece is designed to elevate your wardrobe with timeless sophistication."
@@ -427,11 +428,11 @@ export default function Home() {
                       </h3>
                       <div className="flex items-center gap-2">
                         <span className="text-lg font-bold">
-                          ${product.price}
+                          ₹{product.price}
                         </span>
                         {product.originalPrice && (
                           <span className="text-sm text-muted-foreground line-through">
-                            ${product.originalPrice}
+                            ₹{product.originalPrice}
                           </span>
                         )}
                       </div>
@@ -442,6 +443,9 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+            {/* Client feedback */}
+              
         <Newsletter />
       </main>
 

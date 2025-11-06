@@ -444,8 +444,65 @@ export default function Home() {
           </div>
         </section>
 
-            {/* Client feedback */}
-              
+        {/* Client feedback */}
+
+        <section className="py-16 bg-gradient-to-b from-amber-50 to-white">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <h2 className="font-serif text-3xl sm:text-4xl font-bold mb-4">
+                Loved by Fashion Enthusiasts
+              </h2>
+              <p className="text-muted-foreground text-lg">
+                See what our clients say about their Elegance experience
+              </p>
+            </div>
+            <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+              {[
+                {
+                  name: 'Anika Patel',
+                  role: 'Fashion Blogger',
+                  text: 'The quality surpassed my expectations. Every piece feels like it was tailored just for me.',
+                  image: 'profile1.jpg',
+                },
+                {
+                  name: 'Riya Sharma',
+                  role: 'Entrepreneur',
+                  text: 'Elegance transformed my wardrobe. Their curation saved me hours of shopping time!',
+                  image: 'profile2.jpg',
+                },
+                {
+                  name: 'Priya Kapoor',
+                  role: 'Stylist',
+                  text: 'My clients always ask where I source these stunning pieces. Elegance is my secret weapon.',
+                  image: 'profile3.jpg',
+                },
+              ].map((testimonial) => (
+                <div
+                  key={testimonial.name}
+                  className="p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow"
+                >
+                  <p className="text-gray-600 mb-4">"{testimonial.text}"</p>
+                  <div className="flex items-center">
+                    <div className="w-12 h-12 rounded-full flex justify-center items-center bg-gray-100 mr-4">
+                      <span className="text-2xl text-primery" >
+                        {testimonial.name.slice(0, 1)}
+                      </span>
+                    </div>
+                    <div>
+                      <p className="font-medium">{testimonial.name}</p>
+                      <p className="text-sm text-muted-foreground">
+                        {testimonial.role}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Client feedback */}
+
         <Newsletter />
       </main>
 

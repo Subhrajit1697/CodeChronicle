@@ -15,12 +15,12 @@ import {
 } from "@/components/ui/dialog";
 
 import dressImage from "@assets/generated_images/Woman_in_mauve_dress_75837bf2.png";
-import blackDressImage from "@assets/generated_images/Black_cocktail_dress_85fd198d.png";
-import sweaterImage from "@assets/generated_images/Cream_cashmere_sweater_f77fd6f1.png";
-import trousersImage from "@assets/generated_images/Navy_blue_trousers_028ba23d.png";
-import handbagImage from "@assets/generated_images/Burgundy_leather_handbag_b5972d24.png";
-import blouseImage from "@assets/generated_images/White_silk_blouse_199f23e2.png";
-import skirtImage from "@assets/generated_images/Rose_pink_midi_skirt_ed8a7f4d.png";
+import blackDressImage from "@assets/generated_images/black_cocktail_dress.jfif";
+import sweaterImage from "@assets/generated_images/Women's_Sweater.jfif";
+import trousersImage from "@assets/generated_images/LTS Tall Womens Black Wide Leg High Waisted Trousers _ Long Tall Sally.jfif";
+import handbagImage from "@assets/generated_images/handbag03.jfif";
+import blouseImage from "@assets/generated_images/20 Best Formal Shirts for Women With Latest Designs.jfif";
+import skirtImage from "@assets/generated_images/Ivanka Trump cuts a classic figure as she heads out to work.jfif";
 
 export default function Home() {
   const [cartOpen, setCartOpen] = useState(false);

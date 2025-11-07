@@ -23,6 +23,8 @@ import blackDressImage from "@assets/generated_images/black_cocktail_dress.jfif"
 import sweaterImage from "@assets/generated_images/Women's_Sweater.jfif";
 import trousersImage from "@assets/generated_images/LTS Tall Womens Black Wide Leg High Waisted Trousers _ Long Tall Sally.jfif";
 import handbagImage from "@assets/generated_images/handbag03.jfif";
+import handbagImage1 from "@assets/generated_images/handbag01.jfif";
+import handbagImage2 from "@assets/generated_images/handbag03.jfif";
 import blouseImage from "@assets/generated_images/tops_for_womens.jfif";
 import skirtImage from "@assets/generated_images/Ivanka Trump cuts a classic figure as she heads out to work.jfif";
 
@@ -172,6 +174,20 @@ export default function Home() {
       price: 4999,
       image: bridaldress3,
       category: 'Dresses'
+    },
+        {
+      id: '19',
+      name: 'Leather Handbag',
+      price: 5499,
+      image: handbagImage1,
+      category: 'Accessories'
+    },
+           {
+      id: '19',
+      name: 'Leather Handbag',
+      price: 5499,
+      image: handbagImage2,
+      category: 'Accessories'
     },
   ];
 
